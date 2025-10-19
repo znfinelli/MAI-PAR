@@ -1,0 +1,29 @@
+Plan found:
+0.00000: (move a22 a23)
+0.00100: (collect a23)
+0.00200: (move a23 a13)
+0.00300: (collect a13)
+0.00400: (push m1 a13 a12)
+0.00500: (push m1 a12 a11)
+0.00600: (collect a11)
+0.00700: (move a11 a21)
+0.00800: (collect a21)
+0.00900: (move a21 a31)
+0.01000: (collect a31)
+0.01100: (move a31 a41)
+0.01200: (collect a41)
+0.01300: (move a41 a42)
+0.01400: (collect a42)
+0.01500: (move a42 a43)
+0.01600: (push m2 a43 a33)
+0.01700: (push m2 a33 a23)
+0.01800: (push m2 a23 a13)
+0.01900: (move a13 a14)
+0.02000: (collect a14)
+0.02100: (move a14 a24)
+0.02200: (move a24 a34)
+0.02300: (push m4 a34 a33)
+Metric: 0.023000000000000013
+Makespan: 0.023000000000000013
+States evaluated: undefined
+Planner found 1 plan(s) in 13.091secs.
