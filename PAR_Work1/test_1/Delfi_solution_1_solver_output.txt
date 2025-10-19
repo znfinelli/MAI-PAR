@@ -1,0 +1,555 @@
+stderr: 
+Using TensorFlow backend.
+
+stdout: 
+Parsing pddl.....
+Parsing pddl..: [0.010s CPU, 0.002s wall-clock]
+Normalizing task.....
+Normalizing task..: [0.000s CPU, 0.000s wall-clock]
+Creating abstract structure graph.....
+Creating abstract structure graph..: [0.000s CPU, 0.001s wall-clock]
+Computing image from given graph...
+Using graph input file /tmp/tmp04l0ur4m/abstract-structure-graph.txt
+Using image output directory /tmp/tmp04l0ur4m
+Writing abstract structure graph grayscale 8bit image.....
+Grayscale color: 255
+Creating matrix for a graph with 110 nodes..
+Matrix size when created: 98568
+Matrix created, filling with values for edges..
+Performing bolding.
+Matrix size when 1s added: 98568
+Number of graph nodes: 111
+Shrink ratio: 3
+Shrinking matrix to size 37x37..
+Shrinked matrix size when created: 10952
+Writing grayscale image of size 128x128 ..
+Writing abstract structure graph grayscale 8bit image..: [0.250s CPU, 0.017s wall-clock]
+Done computing image! [0.260s CPU, 0.018s wall-clock]
+
+==== Computing an abstract structure graph from the lifted task description... ====
+
+
+==== Done computing an abstract structure graph. ====
+
+
+==== Selecting planner from learned model... ====
+
+Using json model file /workspace/delfi/dl_model/models/lifted/model.json
+Using h5 model file /workspace/delfi/dl_model/models/lifted/model.h5
+Loaded model from disk
+Chose 5652d59dafed-h2-simpless-oss-cpdbshc900
+
+==== Done selecting planner from learned model. ====
+
+
+==== Running the selected planner... ====
+
+Running planner, call string: ['/usr/bin/python', '/workspace/delfi/fast-downward.py', '--transform-task', 'preprocess', '--build', 'release64', '--search-memory-limit', '7600M', '--plan-file', 'plan', 'domain', 'problem', '--symmetries', 'sym=structural_symmetries(search_symmetries=oss)', '--search', 'astar(cpdbs(patterns=hillclimbing(max_time=900),transform=multiply_out_conditional_effects),symmetries=sym,pruning=stubborn_sets_simple(minimum_pruning_ratio=0.01),num_por_probes=1000)']
+INFO     Running translator.
+INFO     translator input: ['domain', 'problem']
+INFO     translator arguments: []
+INFO     translator time limit: None
+INFO     translator memory limit: None
+INFO     callstring: /usr/bin/python /workspace/delfi/builds/release64/bin/translate/translate.py domain problem
+Parsing...
+Parsing: [0.000s CPU, 0.002s wall-clock]
+Normalizing task... [0.000s CPU, 0.000s wall-clock]
+Instantiating...
+Generating Datalog program... [0.000s CPU, 0.000s wall-clock]
+Normalizing Datalog program...
+Normalizing Datalog program: [0.000s CPU, 0.002s wall-clock]
+Preparing model... [0.000s CPU, 0.001s wall-clock]
+Generated 17 rules.
+Computing model... [0.010s CPU, 0.004s wall-clock]
+234 relevant atoms
+144 auxiliary atoms
+378 final queue length
+646 total queue pushes
+Completing instantiation... [0.010s CPU, 0.007s wall-clock]
+Instantiating: [0.020s CPU, 0.014s wall-clock]
+Computing fact groups...
+Finding invariants...
+11 initial candidates
+Finding invariants: [0.000s CPU, 0.002s wall-clock]
+Checking invariant weight... [0.000s CPU, 0.000s wall-clock]
+Instantiating groups... [0.000s CPU, 0.000s wall-clock]
+Collecting mutex groups... [0.000s CPU, 0.000s wall-clock]
+Choosing groups...
+9 uncovered facts
+Choosing groups: [0.000s CPU, 0.000s wall-clock]
+Building translation key... [0.000s CPU, 0.000s wall-clock]
+Computing fact groups: [0.000s CPU, 0.004s wall-clock]
+Building STRIPS to SAS dictionary... [0.000s CPU, 0.000s wall-clock]
+Building dictionary for full mutex groups... [0.000s CPU, 0.000s wall-clock]
+Building mutex information...
+Building mutex information: [0.000s CPU, 0.000s wall-clock]
+Translating task...
+Processing axioms...
+Simplifying axioms... [0.000s CPU, 0.000s wall-clock]
+Processing axioms: [0.000s CPU, 0.001s wall-clock]
+Translating task: [0.010s CPU, 0.009s wall-clock]
+96 effect conditions simplified
+0 implied preconditions added
+Detecting unreachable propositions...
+0 operators removed
+0 axioms removed
+8 propositions removed
+Detecting unreachable propositions: [0.000s CPU, 0.004s wall-clock]
+Reordering and filtering variables...
+17 of 17 variables necessary.
+9 of 17 mutex groups necessary.
+123 of 123 operators necessary.
+0 of 0 axiom rules necessary.
+Reordering and filtering variables: [0.000s CPU, 0.002s wall-clock]
+Translator variables: 17
+Translator derived variables: 0
+Translator facts: 69
+Translator goal facts: 8
+Translator mutex groups: 9
+Translator total mutex groups size: 45
+Translator operators: 123
+Translator axioms: 0
+Translator task size: 1087
+Translator peak memory: 28084 KB
+Writing output... [0.000s CPU, 0.001s wall-clock]
+Done! [0.040s CPU, 0.037s wall-clock]
+INFO     Run task transformation (preprocess).
+INFO     Absolute path: /workspace/delfi/builds/release64/bin/preprocess
+INFO     callstring: /workspace/delfi/builds/release64/bin/preprocess < output.sas
+Building causal graph...
+The causal graph is not acyclic.
+17 variables of 17 necessary
+9 of 9 mutex groups necessary.
+123 of 123 operators necessary.
+0 of 0 axiom rules necessary.
+Initializing mutex computation...
+Mutex computation initialized with 69 fluents.
+iteration for mutex detection and operator pruning
+Initialize m_index fw
+Initialized mvalues forward: reached=289, notReached=3908, spurious=564
+Initialize m_ops fw
+Computing mutexes...
+Mutex computation finished with reached=4197, notReached=0, spurious=564
+0 operators are spurious because were not triggered
+H^2 mutexes added fw: 0, unreachable: 0
+0 of 123 operators detected as spurious
+iteration for mutex detection and operator pruning
+Initialize m_index bw
+Init values regression
+Initialized mvalues backward: reached=474, notReached=3723, spurious=564
+Initialize m_ops bw
+Computing mutexes...
+Mutex computation finished with reached=4197, notReached=0, spurious=564
+0 operators are spurious because were not triggered
+H^2 mutexes added bw: 0, unreachable: 0
+0 of 123 operators detected as spurious
+Total mutex and disambiguation time: 0.002075 iterations: 2
+9 of 9 mutex groups necessary.
+123 of 123 operators necessary.
+0 of 0 axiom rules necessary.
+Change id of operators: 123
+Change id of mutexes
+Change id of goals
+Change id of initial state
+Remove unreachable facts from variables: 17
+9 of 9 mutex groups necessary.
+123 of 123 operators necessary.
+0 of 0 axiom rules necessary.
+Updating causal graph and pruning unnecessary facts
+17 variables of 17 of 17 necessary
+The causal graph is not acyclic.
+17 variables of 17 necessary
+9 of 9 mutex groups necessary.
+123 of 123 operators necessary.
+0 of 0 axiom rules necessary.
+Building domain transition graphs...
+solveable in poly time 0
+Building successor generator...
+Preprocessor variables: 17
+Preprocessor facts: 69
+Preprocessor derived variables: 0
+Preprocessor operators: 123
+Preprocessor mutex groups: 9
+Preprocessor task size: 1087
+Writing output...
+done
+INFO     Running search (release64).
+INFO     search input: output.sas
+INFO     search arguments: ['--symmetries', 'sym=structural_symmetries(search_symmetries=oss)', '--search', 'astar(cpdbs(patterns=hillclimbing(max_time=900),transform=multiply_out_conditional_effects),symmetries=sym,pruning=stubborn_sets_simple(minimum_pruning_ratio=0.01),num_por_probes=1000)']
+INFO     search time limit: None
+INFO     search memory limit: 7600 MB
+INFO     search executable: /workspace/delfi/builds/release64/bin/downward
+INFO     callstring: /workspace/delfi/builds/release64/bin/downward --symmetries 'sym=structural_symmetries(search_symmetries=oss)' --search 'astar(cpdbs(patterns=hillclimbing(max_time=900),transform=multiply_out_conditional_effects),symmetries=sym,pruning=stubborn_sets_simple(minimum_pruning_ratio=0.01),num_por_probes=1000)' --internal-plan-file plan < output.sas
+reading input... [t=7.5601e-05s]
+done reading input! [t=0.000749204s]
+packing state variables...done! [t=0.000764132s]
+Variables: 17
+FactPairs: 69
+Bytes per state: 4
+Building successor generator...done! [t=0.000898515s]
+peak memory difference for root successor generator creation: 0 KB
+time for root successor generation creation: 6.0714e-05s
+done initializing global data [t=0.000934993s]
+PDB collection construction time: 0.000233718s
+Done calculating initial PDB collection
+Average operator cost: 1
+building causal graph...done! [t=0.000111589s]
+Done calculating initial candidate PDBs
+current collection size is 51
+current initial h value: 17
+pattern: [9, 13] - improvement: 2
+pattern: [10, 13] - improvement: 42
+found a better pattern with improvement 42
+pattern: [10, 13]
+Hill climbing time so far: 0.0192333s
+current collection size is 132
+current initial h value: 17
+pattern: [9, 13] - improvement: 1
+pattern: [3, 10, 13] - improvement: 46
+pattern: [7, 10, 13] - improvement: 1
+pattern: [9, 10, 13] - improvement: 384
+pattern: [10, 11, 13] - improvement: 393
+found a better pattern with improvement 393
+pattern: [10, 11, 13]
+Hill climbing time so far: 0.0416717s
+current collection size is 861
+current initial h value: 18
+pattern: [3, 10, 13] - improvement: 9
+pattern: [6, 10, 13] - improvement: 1
+pattern: [9, 10, 13] - improvement: 182
+pattern: [0, 10, 11, 13] - improvement: 78
+pattern: [3, 10, 11, 13] - improvement: 153
+pattern: [4, 10, 11, 13] - improvement: 2
+pattern: [6, 10, 11, 13] - improvement: 12
+pattern: [7, 10, 11, 13] - improvement: 2
+pattern: [8, 10, 11, 13] - improvement: 3
+pattern: [9, 10, 11, 13] - improvement: 882
+pattern: [10, 11, 12, 13] - improvement: 293
+found a better pattern with improvement 882
+pattern: [9, 10, 11, 13]
+Hill climbing time so far: 0.0956273s
+current collection size is 7422
+current initial h value: 22
+pattern: [3, 10, 13] - improvement: 3
+pattern: [0, 10, 11, 13] - improvement: 3
+pattern: [3, 10, 11, 13] - improvement: 65
+pattern: [4, 10, 11, 13] - improvement: 1
+pattern: [6, 10, 11, 13] - improvement: 2
+pattern: [7, 10, 11, 13] - improvement: 1
+pattern: [10, 11, 12, 13] - improvement: 53
+pattern: [0, 9, 10, 11, 13] - improvement: 92
+pattern: [2, 9, 10, 11, 13] - improvement: 125
+pattern: [3, 9, 10, 11, 13] - improvement: 232
+pattern: [4, 9, 10, 11, 13] - improvement: 11
+pattern: [5, 9, 10, 11, 13] - improvement: 3
+pattern: [6, 9, 10, 11, 13] - improvement: 22
+pattern: [7, 9, 10, 11, 13] - improvement: 41
+pattern: [8, 9, 10, 11, 13] - improvement: 2
+pattern: [9, 10, 11, 12, 13] - improvement: 337
+found a better pattern with improvement 337
+pattern: [9, 10, 11, 12, 13]
+Hill climbing time so far: 0.282788s
+current collection size is 66471
+current initial h value: 22
+pattern: [0, 10, 11, 13] - improvement: 2
+pattern: [3, 10, 11, 13] - improvement: 31
+pattern: [4, 10, 11, 13] - improvement: 1
+pattern: [0, 9, 10, 11, 13] - improvement: 40
+pattern: [2, 9, 10, 11, 13] - improvement: 69
+pattern: [3, 9, 10, 11, 13] - improvement: 118
+pattern: [4, 9, 10, 11, 13] - improvement: 4
+pattern: [6, 9, 10, 11, 13] - improvement: 6
+pattern: [7, 9, 10, 11, 13] - improvement: 1
+pattern: [0, 9, 10, 11, 12, 13] - improvement: 244
+pattern: [1, 9, 10, 11, 12, 13] - improvement: 3
+pattern: [2, 9, 10, 11, 12, 13] - improvement: 190
+pattern: [3, 9, 10, 11, 12, 13] - improvement: 199
+pattern: [4, 9, 10, 11, 12, 13] - improvement: 29
+pattern: [5, 9, 10, 11, 12, 13] - improvement: 5
+pattern: [6, 9, 10, 11, 12, 13] - improvement: 13
+pattern: [7, 9, 10, 11, 12, 13] - improvement: 9
+found a better pattern with improvement 244
+pattern: [0, 9, 10, 11, 12, 13]
+Hill climbing time so far: 0.56033s
+current collection size is 184569
+current initial h value: 22
+pattern: [3, 10, 13] - improvement: 2
+pattern: [3, 10, 11, 13] - improvement: 20
+pattern: [4, 10, 11, 13] - improvement: 1
+pattern: [2, 9, 10, 11, 13] - improvement: 52
+pattern: [3, 9, 10, 11, 13] - improvement: 60
+pattern: [4, 9, 10, 11, 13] - improvement: 4
+pattern: [6, 9, 10, 11, 13] - improvement: 2
+pattern: [7, 9, 10, 11, 13] - improvement: 2
+pattern: [1, 9, 10, 11, 12, 13] - improvement: 2
+pattern: [2, 9, 10, 11, 12, 13] - improvement: 141
+pattern: [3, 9, 10, 11, 12, 13] - improvement: 132
+pattern: [4, 9, 10, 11, 12, 13] - improvement: 17
+pattern: [5, 9, 10, 11, 12, 13] - improvement: 3
+pattern: [6, 9, 10, 11, 12, 13] - improvement: 6
+pattern: [7, 9, 10, 11, 12, 13] - improvement: 7
+pattern: [0, 4, 9, 10, 11, 12, 13] - improvement: 67
+pattern: [0, 6, 9, 10, 11, 12, 13] - improvement: 19
+pattern: [0, 1, 9, 10, 11, 12, 13] - improvement: 5
+pattern: [0, 2, 9, 10, 11, 12, 13] - improvement: 231
+pattern: [0, 3, 9, 10, 11, 12, 13] - improvement: 182
+pattern: [0, 5, 9, 10, 11, 12, 13] - improvement: 3
+pattern: [0, 7, 9, 10, 11, 12, 13] - improvement: 10
+pattern: [0, 8, 9, 10, 11, 12, 13] - improvement: 3
+found a better pattern with improvement 231
+pattern: [0, 2, 9, 10, 11, 12, 13]
+Hill climbing time so far: 0.962238s
+current collection size is 420765
+current initial h value: 22
+pattern: [3, 10, 11, 13] - improvement: 17
+pattern: [4, 10, 11, 13] - improvement: 1
+pattern: [3, 9, 10, 11, 13] - improvement: 47
+pattern: [4, 9, 10, 11, 13] - improvement: 3
+pattern: [7, 9, 10, 11, 13] - improvement: 1
+pattern: [1, 9, 10, 11, 12, 13] - improvement: 2
+pattern: [3, 9, 10, 11, 12, 13] - improvement: 102
+pattern: [4, 9, 10, 11, 12, 13] - improvement: 15
+pattern: [5, 9, 10, 11, 12, 13] - improvement: 1
+pattern: [6, 9, 10, 11, 12, 13] - improvement: 1
+pattern: [7, 9, 10, 11, 12, 13] - improvement: 6
+pattern: [0, 4, 9, 10, 11, 12, 13] - improvement: 54
+pattern: [0, 6, 9, 10, 11, 12, 13] - improvement: 16
+pattern: [0, 1, 9, 10, 11, 12, 13] - improvement: 2
+pattern: [0, 3, 9, 10, 11, 12, 13] - improvement: 140
+pattern: [0, 5, 9, 10, 11, 12, 13] - improvement: 1
+pattern: [0, 7, 9, 10, 11, 12, 13] - improvement: 7
+pattern: [0, 8, 9, 10, 11, 12, 13] - improvement: 2
+pattern: [0, 2, 4, 9, 10, 11, 12, 13] - improvement: 69
+pattern: [0, 2, 6, 9, 10, 11, 12, 13] - improvement: 22
+pattern: [0, 2, 5, 9, 10, 11, 12, 13] - improvement: 105
+pattern: [0, 2, 7, 9, 10, 11, 12, 13] - improvement: 22
+pattern: [0, 1, 2, 9, 10, 11, 12, 13] - improvement: 2
+pattern: [0, 2, 3, 9, 10, 11, 12, 13] - improvement: 179
+pattern: [0, 2, 8, 9, 10, 11, 12, 13] - improvement: 5
+found a better pattern with improvement 179
+pattern: [0, 2, 3, 9, 10, 11, 12, 13]
+Hill climbing time so far: 1.52326s
+current collection size is 893157
+current initial h value: 22
+pattern: [4, 9, 10, 11, 13] - improvement: 1
+pattern: [6, 9, 10, 11, 13] - improvement: 1
+pattern: [1, 9, 10, 11, 12, 13] - improvement: 1
+pattern: [4, 9, 10, 11, 12, 13] - improvement: 15
+pattern: [5, 9, 10, 11, 12, 13] - improvement: 3
+pattern: [6, 9, 10, 11, 12, 13] - improvement: 3
+pattern: [7, 9, 10, 11, 12, 13] - improvement: 1
+pattern: [0, 4, 9, 10, 11, 12, 13] - improvement: 53
+pattern: [0, 6, 9, 10, 11, 12, 13] - improvement: 17
+pattern: [0, 1, 9, 10, 11, 12, 13] - improvement: 1
+pattern: [0, 5, 9, 10, 11, 12, 13] - improvement: 3
+pattern: [0, 7, 9, 10, 11, 12, 13] - improvement: 1
+pattern: [0, 8, 9, 10, 11, 12, 13] - improvement: 1
+pattern: [0, 2, 4, 9, 10, 11, 12, 13] - improvement: 61
+pattern: [0, 2, 6, 9, 10, 11, 12, 13] - improvement: 24
+pattern: [0, 2, 5, 9, 10, 11, 12, 13] - improvement: 111
+pattern: [0, 2, 7, 9, 10, 11, 12, 13] - improvement: 7
+pattern: [0, 1, 2, 9, 10, 11, 12, 13] - improvement: 1
+pattern: [0, 2, 8, 9, 10, 11, 12, 13] - improvement: 2
+pattern: [0, 2, 3, 4, 9, 10, 11, 12, 13] - improvement: 69
+pattern: [0, 2, 3, 6, 9, 10, 11, 12, 13] - improvement: 33
+pattern: [0, 2, 3, 5, 9, 10, 11, 12, 13] - improvement: 115
+pattern: [0, 2, 3, 7, 9, 10, 11, 12, 13] - improvement: 35
+pattern: [0, 1, 2, 3, 9, 10, 11, 12, 13] - improvement: 1
+pattern: [0, 2, 3, 8, 9, 10, 11, 12, 13] - improvement: 2
+found a better pattern with improvement 115
+pattern: [0, 2, 3, 5, 9, 10, 11, 12, 13]
+Hill climbing time so far: 2.35458s
+current collection size is 1837941
+current initial h value: 22
+pattern: [6, 9, 10, 11, 13] - improvement: 1
+pattern: [7, 9, 10, 11, 13] - improvement: 1
+pattern: [4, 9, 10, 11, 12, 13] - improvement: 10
+pattern: [6, 9, 10, 11, 12, 13] - improvement: 2
+pattern: [7, 9, 10, 11, 12, 13] - improvement: 1
+pattern: [8, 9, 10, 11, 12, 13] - improvement: 2
+pattern: [0, 4, 9, 10, 11, 12, 13] - improvement: 33
+pattern: [0, 6, 9, 10, 11, 12, 13] - improvement: 14
+pattern: [0, 1, 9, 10, 11, 12, 13] - improvement: 1
+pattern: [0, 7, 9, 10, 11, 12, 13] - improvement: 1
+pattern: [0, 8, 9, 10, 11, 12, 13] - improvement: 2
+pattern: [0, 2, 4, 9, 10, 11, 12, 13] - improvement: 39
+pattern: [0, 2, 6, 9, 10, 11, 12, 13] - improvement: 14
+pattern: [0, 2, 7, 9, 10, 11, 12, 13] - improvement: 5
+pattern: [0, 1, 2, 9, 10, 11, 12, 13] - improvement: 1
+pattern: [0, 2, 8, 9, 10, 11, 12, 13] - improvement: 2
+pattern: [0, 2, 3, 4, 9, 10, 11, 12, 13] - improvement: 50
+pattern: [0, 2, 3, 6, 9, 10, 11, 12, 13] - improvement: 29
+pattern: [0, 2, 3, 7, 9, 10, 11, 12, 13] - improvement: 43
+pattern: [0, 1, 2, 3, 9, 10, 11, 12, 13] - improvement: 1
+pattern: [0, 2, 3, 8, 9, 10, 11, 12, 13] - improvement: 2
+pattern: [0, 2, 3, 4, 5, 9, 10, 11, 12, 13] - improvement: 67
+pattern: [0, 2, 3, 5, 6, 9, 10, 11, 12, 13] - improvement: 40
+pattern: [0, 2, 3, 5, 7, 9, 10, 11, 12, 13] - improvement: 112
+pattern: [0, 1, 2, 3, 5, 9, 10, 11, 12, 13] - improvement: 8
+pattern: [0, 2, 3, 5, 8, 9, 10, 11, 12, 13] - improvement: 5
+found a better pattern with improvement 112
+pattern: [0, 2, 3, 5, 7, 9, 10, 11, 12, 13]
+Hill climbing time so far: 2.40322s
+current collection size is 3727509
+current initial h value: 22
+pattern: [4, 9, 10, 11, 13] - improvement: 4
+pattern: [6, 9, 10, 11, 13] - improvement: 1
+pattern: [4, 9, 10, 11, 12, 13] - improvement: 12
+pattern: [6, 9, 10, 11, 12, 13] - improvement: 1
+pattern: [0, 4, 9, 10, 11, 12, 13] - improvement: 50
+pattern: [0, 6, 9, 10, 11, 12, 13] - improvement: 5
+pattern: [0, 8, 9, 10, 11, 12, 13] - improvement: 2
+pattern: [0, 2, 4, 9, 10, 11, 12, 13] - improvement: 61
+pattern: [0, 2, 6, 9, 10, 11, 12, 13] - improvement: 9
+pattern: [0, 2, 8, 9, 10, 11, 12, 13] - improvement: 2
+pattern: [0, 2, 3, 4, 9, 10, 11, 12, 13] - improvement: 69
+pattern: [0, 2, 3, 6, 9, 10, 11, 12, 13] - improvement: 29
+pattern: [0, 2, 3, 8, 9, 10, 11, 12, 13] - improvement: 2
+pattern: [0, 2, 3, 4, 5, 9, 10, 11, 12, 13] - improvement: 92
+pattern: [0, 2, 3, 5, 6, 9, 10, 11, 12, 13] - improvement: 35
+pattern: [0, 1, 2, 3, 5, 9, 10, 11, 12, 13] - improvement: 3
+pattern: [0, 2, 3, 5, 8, 9, 10, 11, 12, 13] - improvement: 3
+found a better pattern with improvement 92
+pattern: [0, 2, 3, 4, 5, 9, 10, 11, 12, 13]
+Hill climbing time so far: 2.45472s
+current collection size is 5617077
+current initial h value: 22
+pattern: [6, 10, 11, 13] - improvement: 1
+pattern: [6, 9, 10, 11, 13] - improvement: 2
+pattern: [1, 9, 10, 11, 12, 13] - improvement: 3
+pattern: [6, 9, 10, 11, 12, 13] - improvement: 2
+pattern: [0, 6, 9, 10, 11, 12, 13] - improvement: 8
+pattern: [0, 1, 9, 10, 11, 12, 13] - improvement: 3
+pattern: [0, 2, 6, 9, 10, 11, 12, 13] - improvement: 9
+pattern: [0, 1, 2, 9, 10, 11, 12, 13] - improvement: 3
+pattern: [0, 2, 3, 6, 9, 10, 11, 12, 13] - improvement: 20
+pattern: [0, 1, 2, 3, 9, 10, 11, 12, 13] - improvement: 3
+pattern: [0, 2, 3, 5, 6, 9, 10, 11, 12, 13] - improvement: 27
+pattern: [0, 1, 2, 3, 5, 9, 10, 11, 12, 13] - improvement: 10
+pattern: [0, 2, 3, 5, 8, 9, 10, 11, 12, 13] - improvement: 5
+found a better pattern with improvement 27
+pattern: [0, 2, 3, 5, 6, 9, 10, 11, 12, 13]
+Hill climbing time so far: 2.51286s
+current collection size is 7506645
+current initial h value: 22
+pattern: [0, 1, 2, 3, 5, 9, 10, 11, 12, 13] - improvement: 2
+pattern: [0, 2, 3, 5, 8, 9, 10, 11, 12, 13] - improvement: 6
+Improvement below threshold. Stop hill climbing.
+iPDB: iterations = 12
+iPDB: number of patterns = 19
+iPDB: size = 7506645
+iPDB: generated = 120
+iPDB: rejected = 80
+iPDB: maximum pdb size = 1889568
+iPDB: hill climbing time: 2.57752s
+Pattern generation (hill climbing) time: 2.58052s
+PDB collection construction time: 2.58054s
+Pruned 10 of 13 maximal additive subsets
+Pruned 13 of 19 PDBs
+Dominance pruning took 1.6211e-05s
+Initializing symmetries (eager search)
+Initializing symmetries
+Using Bliss to find group generators
+Done initializing symmetries: 0.000168827s
+Number of generators: 0
+Number of identity generators (on states, not on operators): 0
+Order of generators: []
+Conducting best first search with reopening closed nodes, (real) bound = 2147483647
+New best heuristic value for cpdbs(patterns = hillclimbing(max_time = 900), transform = multiply_out_conditional_effects): 22
+[g=0, 1 evaluated, 0 expanded, t=2.58242s, 94340 KB]
+f = 22 [1 evaluated, 0 expanded, t=2.58248s, 94340 KB]
+Initial heuristic value for cpdbs(patterns = hillclimbing(max_time = 900), transform = multiply_out_conditional_effects): 22
+pruning method: stubborn sets simple
+New best heuristic value for cpdbs(patterns = hillclimbing(max_time = 900), transform = multiply_out_conditional_effects): 21
+[g=1, 2 evaluated, 1 expanded, t=2.58281s, 94340 KB]
+New best heuristic value for cpdbs(patterns = hillclimbing(max_time = 900), transform = multiply_out_conditional_effects): 20
+[g=2, 6 evaluated, 2 expanded, t=2.58285s, 94340 KB]
+New best heuristic value for cpdbs(patterns = hillclimbing(max_time = 900), transform = multiply_out_conditional_effects): 19
+[g=3, 13 evaluated, 3 expanded, t=2.5829s, 94340 KB]
+New best heuristic value for cpdbs(patterns = hillclimbing(max_time = 900), transform = multiply_out_conditional_effects): 18
+[g=4, 29 evaluated, 7 expanded, t=2.58296s, 94340 KB]
+f = 24 [34 evaluated, 8 expanded, t=2.58299s, 94340 KB]
+New best heuristic value for cpdbs(patterns = hillclimbing(max_time = 900), transform = multiply_out_conditional_effects): 17
+[g=7, 43 evaluated, 11 expanded, t=2.58304s, 94340 KB]
+New best heuristic value for cpdbs(patterns = hillclimbing(max_time = 900), transform = multiply_out_conditional_effects): 16
+[g=8, 44 evaluated, 12 expanded, t=2.58307s, 94340 KB]
+New best heuristic value for cpdbs(patterns = hillclimbing(max_time = 900), transform = multiply_out_conditional_effects): 15
+[g=9, 45 evaluated, 13 expanded, t=2.5831s, 94340 KB]
+New best heuristic value for cpdbs(patterns = hillclimbing(max_time = 900), transform = multiply_out_conditional_effects): 14
+[g=10, 49 evaluated, 14 expanded, t=2.58314s, 94340 KB]
+New best heuristic value for cpdbs(patterns = hillclimbing(max_time = 900), transform = multiply_out_conditional_effects): 13
+[g=11, 52 evaluated, 15 expanded, t=2.58317s, 94340 KB]
+New best heuristic value for cpdbs(patterns = hillclimbing(max_time = 900), transform = multiply_out_conditional_effects): 12
+[g=12, 57 evaluated, 16 expanded, t=2.5832s, 94340 KB]
+New best heuristic value for cpdbs(patterns = hillclimbing(max_time = 900), transform = multiply_out_conditional_effects): 11
+[g=13, 92 evaluated, 28 expanded, t=2.58335s, 94340 KB]
+New best heuristic value for cpdbs(patterns = hillclimbing(max_time = 900), transform = multiply_out_conditional_effects): 10
+[g=14, 96 evaluated, 29 expanded, t=2.58339s, 94340 KB]
+New best heuristic value for cpdbs(patterns = hillclimbing(max_time = 900), transform = multiply_out_conditional_effects): 9
+[g=15, 99 evaluated, 30 expanded, t=2.58342s, 94340 KB]
+New best heuristic value for cpdbs(patterns = hillclimbing(max_time = 900), transform = multiply_out_conditional_effects): 8
+[g=16, 101 evaluated, 31 expanded, t=2.58345s, 94340 KB]
+New best heuristic value for cpdbs(patterns = hillclimbing(max_time = 900), transform = multiply_out_conditional_effects): 7
+[g=17, 104 evaluated, 32 expanded, t=2.58349s, 94340 KB]
+New best heuristic value for cpdbs(patterns = hillclimbing(max_time = 900), transform = multiply_out_conditional_effects): 6
+[g=18, 108 evaluated, 33 expanded, t=2.58352s, 94340 KB]
+New best heuristic value for cpdbs(patterns = hillclimbing(max_time = 900), transform = multiply_out_conditional_effects): 5
+[g=19, 113 evaluated, 34 expanded, t=2.58356s, 94340 KB]
+New best heuristic value for cpdbs(patterns = hillclimbing(max_time = 900), transform = multiply_out_conditional_effects): 4
+[g=20, 118 evaluated, 35 expanded, t=2.58361s, 94340 KB]
+New best heuristic value for cpdbs(patterns = hillclimbing(max_time = 900), transform = multiply_out_conditional_effects): 3
+[g=21, 119 evaluated, 36 expanded, t=2.58366s, 94340 KB]
+New best heuristic value for cpdbs(patterns = hillclimbing(max_time = 900), transform = multiply_out_conditional_effects): 2
+[g=22, 122 evaluated, 37 expanded, t=2.58369s, 94340 KB]
+New best heuristic value for cpdbs(patterns = hillclimbing(max_time = 900), transform = multiply_out_conditional_effects): 1
+[g=23, 129 evaluated, 38 expanded, t=2.58373s, 94340 KB]
+New best heuristic value for cpdbs(patterns = hillclimbing(max_time = 900), transform = multiply_out_conditional_effects): 0
+[g=24, 174 evaluated, 51 expanded, t=2.58389s, 94340 KB]
+Solution found!
+Actual search time: 0.00112645s [t=2.58391s]
+collect a4 (1)
+move a4 a1 (1)
+push m1 a1 a2 (1)
+collect a2 (1)
+move a2 a3 (1)
+move a3 a6 (1)
+push m3 a6 a5 (1)
+push m3 a5 a4 (1)
+push m3 a4 a1 (1)
+move a1 a2 (1)
+push m1 a2 a5 (1)
+push m1 a5 a6 (1)
+push m1 a6 a9 (1)
+collect a9 (1)
+move a9 a6 (1)
+move a6 a3 (1)
+push m2 a3 a2 (1)
+push m2 a2 a5 (1)
+push m2 a5 a4 (1)
+push m2 a4 a7 (1)
+move a7 a8 (1)
+push m4 a8 a5 (1)
+push m4 a5 a2 (1)
+push m4 a2 a3 (1)
+Plan length: 24 step(s).
+Plan cost: 24
+Expanded 52 state(s).
+Reopened 0 state(s).
+Evaluated 177 state(s).
+Evaluations: 177
+Generated 232 state(s).
+Dead ends: 0 state(s).
+Expanded until last jump: 8 state(s).
+Reopened until last jump: 0 state(s).
+Evaluated until last jump: 34 state(s).
+Generated until last jump: 37 state(s).
+Number of registered states: 177
+total successors before partial-order reduction: 232
+total successors after partial-order reduction: 232
+Search time: 0.00152776s
+Total time: 2.58392s
+Solution found.
+Peak memory: 94340 KB
+Overall time: [2.730s CPU, 2.739s wall-clock]
+
+==== Done running the selected planner. ====

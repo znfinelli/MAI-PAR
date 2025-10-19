@@ -1,0 +1,46 @@
+checking plan: plan
+plan to validate:
+
+plan size: 4
+1:
+(move a11 a12)
+ 
+2:
+(push m1 a12 a11)
+ 
+3:
+(move a11 a21)
+ 
+4:
+(collect a21)
+ 
+
+plan validation details
+-----------------------
+
+checking next happening (time 1)
+deleting (robot-location a11)
+adding (robot-location a12)
+
+checking next happening (time 2)
+deleting (robot-location a12)
+deleting (minecar-location m1 a12)
+deleting (empty a11)
+adding (robot-location a11)
+adding (minecar-location m1 a11)
+adding (empty a12)
+
+checking next happening (time 3)
+deleting (robot-location a11)
+adding (robot-location a21)
+
+checking next happening (time 4)
+deleting (mineral a21)
+adding (depleted a21)
+plan executed successfully - checking goal
+plan valid
+final value: 4 
+
+successful plans:
+value: 4
+ plan 4 

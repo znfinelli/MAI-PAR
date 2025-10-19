@@ -1,0 +1,1170 @@
+checking plan: plan
+plan to validate:
+
+plan size: 136
+1:
+(move a22 a12)
+ 
+2:
+(push m6 a12 a22)
+ 
+3:
+(move a22 a23)
+ 
+4:
+(collect a23)
+ 
+5:
+(move a23 a13)
+ 
+6:
+(push m1 a13 a12)
+ 
+7:
+(move a12 a13)
+ 
+8:
+(collect a13)
+ 
+9:
+(move a13 a12)
+ 
+10:
+(move a12 a11)
+ 
+11:
+(collect a11)
+ 
+12:
+(move a11 a21)
+ 
+13:
+(collect a21)
+ 
+14:
+(move a21 a31)
+ 
+15:
+(collect a31)
+ 
+16:
+(move a31 a41)
+ 
+17:
+(collect a41)
+ 
+18:
+(move a41 a42)
+ 
+19:
+(collect a42)
+ 
+20:
+(move a42 a43)
+ 
+21:
+(collect a43)
+ 
+22:
+(move a43 a44)
+ 
+23:
+(collect a44)
+ 
+24:
+(move a44 a34)
+ 
+25:
+(push m4 a34 a33)
+ 
+26:
+(move a33 a23)
+ 
+27:
+(move a23 a13)
+ 
+28:
+(move a13 a14)
+ 
+29:
+(collect a14)
+ 
+30:
+(move a14 a13)
+ 
+31:
+(move a13 a12)
+ 
+32:
+(move a12 a22)
+ 
+33:
+(push m6 a22 a32)
+ 
+34:
+(move a32 a33)
+ 
+35:
+(push m4 a33 a34)
+ 
+36:
+(move a34 a33)
+ 
+37:
+(move a33 a32)
+ 
+38:
+(move a32 a22)
+ 
+39:
+(move a22 a12)
+ 
+40:
+(push m1 a12 a13)
+ 
+41:
+(move a13 a12)
+ 
+42:
+(move a12 a11)
+ 
+43:
+(push m5 a11 a12)
+ 
+44:
+(push m5 a12 a22)
+ 
+45:
+(move a22 a12)
+ 
+46:
+(move a12 a13)
+ 
+47:
+(push m1 a13 a12)
+ 
+48:
+(push m1 a12 a11)
+ 
+49:
+(move a11 a12)
+ 
+50:
+(move a12 a22)
+ 
+51:
+(move a22 a32)
+ 
+52:
+(push m6 a32 a33)
+ 
+53:
+(move a33 a34)
+ 
+54:
+(push m4 a34 a24)
+ 
+55:
+(move a24 a23)
+ 
+56:
+(move a23 a33)
+ 
+57:
+(push m6 a33 a34)
+ 
+58:
+(move a34 a33)
+ 
+59:
+(move a33 a43)
+ 
+60:
+(push m2 a43 a33)
+ 
+61:
+(push m2 a33 a32)
+ 
+62:
+(move a32 a33)
+ 
+63:
+(move a33 a34)
+ 
+64:
+(push m6 a34 a33)
+ 
+65:
+(push m6 a33 a43)
+ 
+66:
+(move a43 a33)
+ 
+67:
+(move a33 a32)
+ 
+68:
+(push m2 a32 a33)
+ 
+69:
+(push m2 a33 a34)
+ 
+70:
+(move a34 a33)
+ 
+71:
+(move a33 a23)
+ 
+72:
+(move a23 a13)
+ 
+73:
+(move a13 a12)
+ 
+74:
+(move a12 a11)
+ 
+75:
+(push m1 a11 a12)
+ 
+76:
+(move a12 a22)
+ 
+77:
+(push m5 a22 a32)
+ 
+78:
+(push m5 a32 a33)
+ 
+79:
+(move a33 a23)
+ 
+80:
+(move a23 a13)
+ 
+81:
+(move a13 a12)
+ 
+82:
+(push m1 a12 a11)
+ 
+83:
+(move a11 a21)
+ 
+84:
+(move a21 a31)
+ 
+85:
+(push m3 a31 a32)
+ 
+86:
+(push m3 a32 a22)
+ 
+87:
+(push m3 a22 a12)
+ 
+88:
+(push m3 a12 a13)
+ 
+89:
+(move a13 a23)
+ 
+90:
+(move a23 a33)
+ 
+91:
+(push m5 a33 a32)
+ 
+92:
+(push m5 a32 a31)
+ 
+93:
+(move a31 a32)
+ 
+94:
+(move a32 a33)
+ 
+95:
+(move a33 a34)
+ 
+96:
+(push m2 a34 a33)
+ 
+97:
+(push m2 a33 a32)
+ 
+98:
+(push m2 a32 a22)
+ 
+99:
+(push m2 a22 a12)
+ 
+100:
+(move a12 a22)
+ 
+101:
+(move a22 a32)
+ 
+102:
+(move a32 a31)
+ 
+103:
+(push m5 a31 a32)
+ 
+104:
+(push m5 a32 a33)
+ 
+105:
+(push m5 a33 a34)
+ 
+106:
+(move a34 a33)
+ 
+107:
+(move a33 a23)
+ 
+108:
+(move a23 a13)
+ 
+109:
+(move a13 a12)
+ 
+110:
+(push m2 a12 a22)
+ 
+111:
+(push m2 a22 a32)
+ 
+112:
+(push m2 a32 a33)
+ 
+113:
+(move a33 a23)
+ 
+114:
+(move a23 a13)
+ 
+115:
+(push m3 a13 a12)
+ 
+116:
+(push m3 a12 a22)
+ 
+117:
+(push m3 a22 a32)
+ 
+118:
+(push m3 a32 a31)
+ 
+119:
+(move a31 a32)
+ 
+120:
+(move a32 a33)
+ 
+121:
+(push m2 a33 a32)
+ 
+122:
+(push m2 a32 a22)
+ 
+123:
+(push m2 a22 a12)
+ 
+124:
+(push m2 a12 a13)
+ 
+125:
+(move a13 a14)
+ 
+126:
+(move a14 a24)
+ 
+127:
+(move a24 a34)
+ 
+128:
+(push m5 a34 a33)
+ 
+129:
+(push m5 a33 a32)
+ 
+130:
+(move a32 a22)
+ 
+131:
+(move a22 a23)
+ 
+132:
+(move a23 a24)
+ 
+133:
+(push m4 a24 a34)
+ 
+134:
+(push m4 a34 a33)
+ 
+135:
+(move a33 a23)
+ 
+136:
+(move a23 a13)
+ 
+
+plan validation details
+-----------------------
+
+checking next happening (time 1)
+deleting (robot-location a22)
+adding (robot-location a12)
+
+checking next happening (time 2)
+deleting (robot-location a12)
+deleting (minecar-location m6 a12)
+deleting (empty a22)
+adding (robot-location a22)
+adding (minecar-location m6 a22)
+adding (empty a12)
+
+checking next happening (time 3)
+deleting (robot-location a22)
+adding (robot-location a23)
+
+checking next happening (time 4)
+deleting (mineral a23)
+adding (depleted a23)
+
+checking next happening (time 5)
+deleting (robot-location a23)
+adding (robot-location a13)
+
+checking next happening (time 6)
+deleting (robot-location a13)
+deleting (minecar-location m1 a13)
+deleting (empty a12)
+adding (robot-location a12)
+adding (minecar-location m1 a12)
+adding (empty a13)
+
+checking next happening (time 7)
+deleting (robot-location a12)
+adding (robot-location a13)
+
+checking next happening (time 8)
+deleting (mineral a13)
+adding (depleted a13)
+
+checking next happening (time 9)
+deleting (robot-location a13)
+adding (robot-location a12)
+
+checking next happening (time 10)
+deleting (robot-location a12)
+adding (robot-location a11)
+
+checking next happening (time 11)
+deleting (mineral a11)
+adding (depleted a11)
+
+checking next happening (time 12)
+deleting (robot-location a11)
+adding (robot-location a21)
+
+checking next happening (time 13)
+deleting (mineral a21)
+adding (depleted a21)
+
+checking next happening (time 14)
+deleting (robot-location a21)
+adding (robot-location a31)
+
+checking next happening (time 15)
+deleting (mineral a31)
+adding (depleted a31)
+
+checking next happening (time 16)
+deleting (robot-location a31)
+adding (robot-location a41)
+
+checking next happening (time 17)
+deleting (mineral a41)
+adding (depleted a41)
+
+checking next happening (time 18)
+deleting (robot-location a41)
+adding (robot-location a42)
+
+checking next happening (time 19)
+deleting (mineral a42)
+adding (depleted a42)
+
+checking next happening (time 20)
+deleting (robot-location a42)
+adding (robot-location a43)
+
+checking next happening (time 21)
+deleting (mineral a43)
+adding (depleted a43)
+
+checking next happening (time 22)
+deleting (robot-location a43)
+adding (robot-location a44)
+
+checking next happening (time 23)
+deleting (mineral a44)
+adding (depleted a44)
+
+checking next happening (time 24)
+deleting (robot-location a44)
+adding (robot-location a34)
+
+checking next happening (time 25)
+deleting (robot-location a34)
+deleting (minecar-location m4 a34)
+deleting (empty a33)
+adding (robot-location a33)
+adding (minecar-location m4 a33)
+adding (empty a34)
+
+checking next happening (time 26)
+deleting (robot-location a33)
+adding (robot-location a23)
+
+checking next happening (time 27)
+deleting (robot-location a23)
+adding (robot-location a13)
+
+checking next happening (time 28)
+deleting (robot-location a13)
+adding (robot-location a14)
+
+checking next happening (time 29)
+deleting (mineral a14)
+adding (depleted a14)
+
+checking next happening (time 30)
+deleting (robot-location a14)
+adding (robot-location a13)
+
+checking next happening (time 31)
+deleting (robot-location a13)
+adding (robot-location a12)
+
+checking next happening (time 32)
+deleting (robot-location a12)
+adding (robot-location a22)
+
+checking next happening (time 33)
+deleting (robot-location a22)
+deleting (minecar-location m6 a22)
+deleting (empty a32)
+adding (robot-location a32)
+adding (minecar-location m6 a32)
+adding (empty a22)
+
+checking next happening (time 34)
+deleting (robot-location a32)
+adding (robot-location a33)
+
+checking next happening (time 35)
+deleting (robot-location a33)
+deleting (minecar-location m4 a33)
+deleting (empty a34)
+adding (robot-location a34)
+adding (minecar-location m4 a34)
+adding (empty a33)
+
+checking next happening (time 36)
+deleting (robot-location a34)
+adding (robot-location a33)
+
+checking next happening (time 37)
+deleting (robot-location a33)
+adding (robot-location a32)
+
+checking next happening (time 38)
+deleting (robot-location a32)
+adding (robot-location a22)
+
+checking next happening (time 39)
+deleting (robot-location a22)
+adding (robot-location a12)
+
+checking next happening (time 40)
+deleting (robot-location a12)
+deleting (minecar-location m1 a12)
+deleting (empty a13)
+adding (robot-location a13)
+adding (minecar-location m1 a13)
+adding (empty a12)
+
+checking next happening (time 41)
+deleting (robot-location a13)
+adding (robot-location a12)
+
+checking next happening (time 42)
+deleting (robot-location a12)
+adding (robot-location a11)
+
+checking next happening (time 43)
+deleting (robot-location a11)
+deleting (minecar-location m5 a11)
+deleting (empty a12)
+adding (robot-location a12)
+adding (minecar-location m5 a12)
+adding (empty a11)
+
+checking next happening (time 44)
+deleting (robot-location a12)
+deleting (minecar-location m5 a12)
+deleting (empty a22)
+adding (robot-location a22)
+adding (minecar-location m5 a22)
+adding (empty a12)
+
+checking next happening (time 45)
+deleting (robot-location a22)
+adding (robot-location a12)
+
+checking next happening (time 46)
+deleting (robot-location a12)
+adding (robot-location a13)
+
+checking next happening (time 47)
+deleting (robot-location a13)
+deleting (minecar-location m1 a13)
+deleting (empty a12)
+adding (robot-location a12)
+adding (minecar-location m1 a12)
+adding (empty a13)
+
+checking next happening (time 48)
+deleting (robot-location a12)
+deleting (minecar-location m1 a12)
+deleting (empty a11)
+adding (robot-location a11)
+adding (minecar-location m1 a11)
+adding (empty a12)
+
+checking next happening (time 49)
+deleting (robot-location a11)
+adding (robot-location a12)
+
+checking next happening (time 50)
+deleting (robot-location a12)
+adding (robot-location a22)
+
+checking next happening (time 51)
+deleting (robot-location a22)
+adding (robot-location a32)
+
+checking next happening (time 52)
+deleting (robot-location a32)
+deleting (minecar-location m6 a32)
+deleting (empty a33)
+adding (robot-location a33)
+adding (minecar-location m6 a33)
+adding (empty a32)
+
+checking next happening (time 53)
+deleting (robot-location a33)
+adding (robot-location a34)
+
+checking next happening (time 54)
+deleting (robot-location a34)
+deleting (minecar-location m4 a34)
+deleting (empty a24)
+adding (robot-location a24)
+adding (minecar-location m4 a24)
+adding (empty a34)
+
+checking next happening (time 55)
+deleting (robot-location a24)
+adding (robot-location a23)
+
+checking next happening (time 56)
+deleting (robot-location a23)
+adding (robot-location a33)
+
+checking next happening (time 57)
+deleting (robot-location a33)
+deleting (minecar-location m6 a33)
+deleting (empty a34)
+adding (robot-location a34)
+adding (minecar-location m6 a34)
+adding (empty a33)
+
+checking next happening (time 58)
+deleting (robot-location a34)
+adding (robot-location a33)
+
+checking next happening (time 59)
+deleting (robot-location a33)
+adding (robot-location a43)
+
+checking next happening (time 60)
+deleting (robot-location a43)
+deleting (minecar-location m2 a43)
+deleting (empty a33)
+adding (robot-location a33)
+adding (minecar-location m2 a33)
+adding (empty a43)
+
+checking next happening (time 61)
+deleting (robot-location a33)
+deleting (minecar-location m2 a33)
+deleting (empty a32)
+adding (robot-location a32)
+adding (minecar-location m2 a32)
+adding (empty a33)
+
+checking next happening (time 62)
+deleting (robot-location a32)
+adding (robot-location a33)
+
+checking next happening (time 63)
+deleting (robot-location a33)
+adding (robot-location a34)
+
+checking next happening (time 64)
+deleting (robot-location a34)
+deleting (minecar-location m6 a34)
+deleting (empty a33)
+adding (robot-location a33)
+adding (minecar-location m6 a33)
+adding (empty a34)
+
+checking next happening (time 65)
+deleting (robot-location a33)
+deleting (minecar-location m6 a33)
+deleting (empty a43)
+adding (robot-location a43)
+adding (minecar-location m6 a43)
+adding (empty a33)
+
+checking next happening (time 66)
+deleting (robot-location a43)
+adding (robot-location a33)
+
+checking next happening (time 67)
+deleting (robot-location a33)
+adding (robot-location a32)
+
+checking next happening (time 68)
+deleting (robot-location a32)
+deleting (minecar-location m2 a32)
+deleting (empty a33)
+adding (robot-location a33)
+adding (minecar-location m2 a33)
+adding (empty a32)
+
+checking next happening (time 69)
+deleting (robot-location a33)
+deleting (minecar-location m2 a33)
+deleting (empty a34)
+adding (robot-location a34)
+adding (minecar-location m2 a34)
+adding (empty a33)
+
+checking next happening (time 70)
+deleting (robot-location a34)
+adding (robot-location a33)
+
+checking next happening (time 71)
+deleting (robot-location a33)
+adding (robot-location a23)
+
+checking next happening (time 72)
+deleting (robot-location a23)
+adding (robot-location a13)
+
+checking next happening (time 73)
+deleting (robot-location a13)
+adding (robot-location a12)
+
+checking next happening (time 74)
+deleting (robot-location a12)
+adding (robot-location a11)
+
+checking next happening (time 75)
+deleting (robot-location a11)
+deleting (minecar-location m1 a11)
+deleting (empty a12)
+adding (robot-location a12)
+adding (minecar-location m1 a12)
+adding (empty a11)
+
+checking next happening (time 76)
+deleting (robot-location a12)
+adding (robot-location a22)
+
+checking next happening (time 77)
+deleting (robot-location a22)
+deleting (minecar-location m5 a22)
+deleting (empty a32)
+adding (robot-location a32)
+adding (minecar-location m5 a32)
+adding (empty a22)
+
+checking next happening (time 78)
+deleting (robot-location a32)
+deleting (minecar-location m5 a32)
+deleting (empty a33)
+adding (robot-location a33)
+adding (minecar-location m5 a33)
+adding (empty a32)
+
+checking next happening (time 79)
+deleting (robot-location a33)
+adding (robot-location a23)
+
+checking next happening (time 80)
+deleting (robot-location a23)
+adding (robot-location a13)
+
+checking next happening (time 81)
+deleting (robot-location a13)
+adding (robot-location a12)
+
+checking next happening (time 82)
+deleting (robot-location a12)
+deleting (minecar-location m1 a12)
+deleting (empty a11)
+adding (robot-location a11)
+adding (minecar-location m1 a11)
+adding (empty a12)
+
+checking next happening (time 83)
+deleting (robot-location a11)
+adding (robot-location a21)
+
+checking next happening (time 84)
+deleting (robot-location a21)
+adding (robot-location a31)
+
+checking next happening (time 85)
+deleting (robot-location a31)
+deleting (minecar-location m3 a31)
+deleting (empty a32)
+adding (robot-location a32)
+adding (minecar-location m3 a32)
+adding (empty a31)
+
+checking next happening (time 86)
+deleting (robot-location a32)
+deleting (minecar-location m3 a32)
+deleting (empty a22)
+adding (robot-location a22)
+adding (minecar-location m3 a22)
+adding (empty a32)
+
+checking next happening (time 87)
+deleting (robot-location a22)
+deleting (minecar-location m3 a22)
+deleting (empty a12)
+adding (robot-location a12)
+adding (minecar-location m3 a12)
+adding (empty a22)
+
+checking next happening (time 88)
+deleting (robot-location a12)
+deleting (minecar-location m3 a12)
+deleting (empty a13)
+adding (robot-location a13)
+adding (minecar-location m3 a13)
+adding (empty a12)
+
+checking next happening (time 89)
+deleting (robot-location a13)
+adding (robot-location a23)
+
+checking next happening (time 90)
+deleting (robot-location a23)
+adding (robot-location a33)
+
+checking next happening (time 91)
+deleting (robot-location a33)
+deleting (minecar-location m5 a33)
+deleting (empty a32)
+adding (robot-location a32)
+adding (minecar-location m5 a32)
+adding (empty a33)
+
+checking next happening (time 92)
+deleting (robot-location a32)
+deleting (minecar-location m5 a32)
+deleting (empty a31)
+adding (robot-location a31)
+adding (minecar-location m5 a31)
+adding (empty a32)
+
+checking next happening (time 93)
+deleting (robot-location a31)
+adding (robot-location a32)
+
+checking next happening (time 94)
+deleting (robot-location a32)
+adding (robot-location a33)
+
+checking next happening (time 95)
+deleting (robot-location a33)
+adding (robot-location a34)
+
+checking next happening (time 96)
+deleting (robot-location a34)
+deleting (minecar-location m2 a34)
+deleting (empty a33)
+adding (robot-location a33)
+adding (minecar-location m2 a33)
+adding (empty a34)
+
+checking next happening (time 97)
+deleting (robot-location a33)
+deleting (minecar-location m2 a33)
+deleting (empty a32)
+adding (robot-location a32)
+adding (minecar-location m2 a32)
+adding (empty a33)
+
+checking next happening (time 98)
+deleting (robot-location a32)
+deleting (minecar-location m2 a32)
+deleting (empty a22)
+adding (robot-location a22)
+adding (minecar-location m2 a22)
+adding (empty a32)
+
+checking next happening (time 99)
+deleting (robot-location a22)
+deleting (minecar-location m2 a22)
+deleting (empty a12)
+adding (robot-location a12)
+adding (minecar-location m2 a12)
+adding (empty a22)
+
+checking next happening (time 100)
+deleting (robot-location a12)
+adding (robot-location a22)
+
+checking next happening (time 101)
+deleting (robot-location a22)
+adding (robot-location a32)
+
+checking next happening (time 102)
+deleting (robot-location a32)
+adding (robot-location a31)
+
+checking next happening (time 103)
+deleting (robot-location a31)
+deleting (minecar-location m5 a31)
+deleting (empty a32)
+adding (robot-location a32)
+adding (minecar-location m5 a32)
+adding (empty a31)
+
+checking next happening (time 104)
+deleting (robot-location a32)
+deleting (minecar-location m5 a32)
+deleting (empty a33)
+adding (robot-location a33)
+adding (minecar-location m5 a33)
+adding (empty a32)
+
+checking next happening (time 105)
+deleting (robot-location a33)
+deleting (minecar-location m5 a33)
+deleting (empty a34)
+adding (robot-location a34)
+adding (minecar-location m5 a34)
+adding (empty a33)
+
+checking next happening (time 106)
+deleting (robot-location a34)
+adding (robot-location a33)
+
+checking next happening (time 107)
+deleting (robot-location a33)
+adding (robot-location a23)
+
+checking next happening (time 108)
+deleting (robot-location a23)
+adding (robot-location a13)
+
+checking next happening (time 109)
+deleting (robot-location a13)
+adding (robot-location a12)
+
+checking next happening (time 110)
+deleting (robot-location a12)
+deleting (minecar-location m2 a12)
+deleting (empty a22)
+adding (robot-location a22)
+adding (minecar-location m2 a22)
+adding (empty a12)
+
+checking next happening (time 111)
+deleting (robot-location a22)
+deleting (minecar-location m2 a22)
+deleting (empty a32)
+adding (robot-location a32)
+adding (minecar-location m2 a32)
+adding (empty a22)
+
+checking next happening (time 112)
+deleting (robot-location a32)
+deleting (minecar-location m2 a32)
+deleting (empty a33)
+adding (robot-location a33)
+adding (minecar-location m2 a33)
+adding (empty a32)
+
+checking next happening (time 113)
+deleting (robot-location a33)
+adding (robot-location a23)
+
+checking next happening (time 114)
+deleting (robot-location a23)
+adding (robot-location a13)
+
+checking next happening (time 115)
+deleting (robot-location a13)
+deleting (minecar-location m3 a13)
+deleting (empty a12)
+adding (robot-location a12)
+adding (minecar-location m3 a12)
+adding (empty a13)
+
+checking next happening (time 116)
+deleting (robot-location a12)
+deleting (minecar-location m3 a12)
+deleting (empty a22)
+adding (robot-location a22)
+adding (minecar-location m3 a22)
+adding (empty a12)
+
+checking next happening (time 117)
+deleting (robot-location a22)
+deleting (minecar-location m3 a22)
+deleting (empty a32)
+adding (robot-location a32)
+adding (minecar-location m3 a32)
+adding (empty a22)
+
+checking next happening (time 118)
+deleting (robot-location a32)
+deleting (minecar-location m3 a32)
+deleting (empty a31)
+adding (robot-location a31)
+adding (minecar-location m3 a31)
+adding (empty a32)
+
+checking next happening (time 119)
+deleting (robot-location a31)
+adding (robot-location a32)
+
+checking next happening (time 120)
+deleting (robot-location a32)
+adding (robot-location a33)
+
+checking next happening (time 121)
+deleting (robot-location a33)
+deleting (minecar-location m2 a33)
+deleting (empty a32)
+adding (robot-location a32)
+adding (minecar-location m2 a32)
+adding (empty a33)
+
+checking next happening (time 122)
+deleting (robot-location a32)
+deleting (minecar-location m2 a32)
+deleting (empty a22)
+adding (robot-location a22)
+adding (minecar-location m2 a22)
+adding (empty a32)
+
+checking next happening (time 123)
+deleting (robot-location a22)
+deleting (minecar-location m2 a22)
+deleting (empty a12)
+adding (robot-location a12)
+adding (minecar-location m2 a12)
+adding (empty a22)
+
+checking next happening (time 124)
+deleting (robot-location a12)
+deleting (minecar-location m2 a12)
+deleting (empty a13)
+adding (robot-location a13)
+adding (minecar-location m2 a13)
+adding (empty a12)
+
+checking next happening (time 125)
+deleting (robot-location a13)
+adding (robot-location a14)
+
+checking next happening (time 126)
+deleting (robot-location a14)
+adding (robot-location a24)
+
+checking next happening (time 127)
+deleting (robot-location a24)
+adding (robot-location a34)
+
+checking next happening (time 128)
+deleting (robot-location a34)
+deleting (minecar-location m5 a34)
+deleting (empty a33)
+adding (robot-location a33)
+adding (minecar-location m5 a33)
+adding (empty a34)
+
+checking next happening (time 129)
+deleting (robot-location a33)
+deleting (minecar-location m5 a33)
+deleting (empty a32)
+adding (robot-location a32)
+adding (minecar-location m5 a32)
+adding (empty a33)
+
+checking next happening (time 130)
+deleting (robot-location a32)
+adding (robot-location a22)
+
+checking next happening (time 131)
+deleting (robot-location a22)
+adding (robot-location a23)
+
+checking next happening (time 132)
+deleting (robot-location a23)
+adding (robot-location a24)
+
+checking next happening (time 133)
+deleting (robot-location a24)
+deleting (minecar-location m4 a24)
+deleting (empty a34)
+adding (robot-location a34)
+adding (minecar-location m4 a34)
+adding (empty a24)
+
+checking next happening (time 134)
+deleting (robot-location a34)
+deleting (minecar-location m4 a34)
+deleting (empty a33)
+adding (robot-location a33)
+adding (minecar-location m4 a33)
+adding (empty a34)
+
+checking next happening (time 135)
+deleting (robot-location a33)
+adding (robot-location a23)
+
+checking next happening (time 136)
+deleting (robot-location a23)
+adding (robot-location a13)
+plan executed successfully - checking goal
+plan valid
+final value: 136 
+
+successful plans:
+value: 136
+ plan 136 

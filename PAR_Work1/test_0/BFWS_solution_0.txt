@@ -1,0 +1,4 @@
+(move a11 a12)
+(push m1 a12 a11)
+(move a11 a21)
+(collect a21)

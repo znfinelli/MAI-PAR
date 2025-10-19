@@ -1,0 +1,23 @@
+--- OK.
+ Match tree built with 17 nodes.
+
+PDDL problem description loaded: 
+	Domain: MINING-ROBOT
+	Problem: MINING_2X2
+	#Actions: 17
+	#Fluents: 19
+Goals found: 2
+Goals_Edges found: 2
+Starting search with 1-BFWS...
+--[2 / 0]--
+--[2 / 1]--
+--[2 / 2]--
+--[1 / 0]--
+--[1 / 5]--
+--[0 / 0]--
+--[0 / 2]--
+Total time: 0.000125999
+Nodes generated during search: 15
+Nodes expanded during search: 5
+Plan found with cost: 4
+Fast-BFS search completed in 0.000125999 secs
