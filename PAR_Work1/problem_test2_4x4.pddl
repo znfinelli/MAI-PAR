@@ -8,8 +8,7 @@
         (minecar-location m2 a43)
         (minecar-location m3 a31)
         (minecar-location m4 a34)
-        (minecar-location m5 a11)
-        (minecar-location m6 a12)
+
 
         (mineral a41)
         (mineral a42)
@@ -19,13 +18,19 @@
         (mineral a31)
         (mineral a23)
         (mineral a13)
-        (mineral a44)
-        (mineral a43)
 
+        (empty a11)
+        (empty a12)
+        (empty a14)
+        (empty a21)
         (empty a22)
+        (empty a23)
         (empty a24)
         (empty a32)
         (empty a33)
+        (empty a41)
+        (empty a42)
+        (empty a44)
 
         (adjacent a11 a12)
         (adjacent a12 a11)
@@ -78,7 +83,6 @@
     )
     (:goal 
         (and 
-            (robot-location a13)
             (minecar-location m1 a11)
             (minecar-location m2 a13)
             (minecar-location m3 a31)
@@ -91,8 +95,6 @@
             (depleted a31)
             (depleted a23)
             (depleted a13)
-            (depleted a44)
-            (depleted a43)
         )
     )
 
