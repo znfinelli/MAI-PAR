@@ -1,0 +1,161 @@
+checking plan: plan
+plan to validate:
+
+plan size: 17
+1:
+(move a11 a12)
+ 
+2:
+(collect a12)
+ 
+3:
+(move a12 a22)
+ 
+4:
+(move a22 a32)
+ 
+5:
+(collect a32)
+ 
+6:
+(move a32 a33)
+ 
+7:
+(collect a33)
+ 
+8:
+(move a33 a23)
+ 
+9:
+(push m1 a23 a22)
+ 
+10:
+(push m1 a22 a21)
+ 
+11:
+(push m1 a21 a11)
+ 
+12:
+(move a11 a21)
+ 
+13:
+(move a21 a31)
+ 
+14:
+(push m2 a31 a21)
+ 
+15:
+(push m2 a21 a22)
+ 
+16:
+(push m2 a22 a23)
+ 
+17:
+(push m2 a23 a13)
+ 
+
+plan validation details
+-----------------------
+
+checking next happening (time 1)
+deleting (robot-location a11)
+adding (robot-location a12)
+
+checking next happening (time 2)
+deleting (mineral a12)
+adding (depleted a12)
+
+checking next happening (time 3)
+deleting (robot-location a12)
+adding (robot-location a22)
+
+checking next happening (time 4)
+deleting (robot-location a22)
+adding (robot-location a32)
+
+checking next happening (time 5)
+deleting (mineral a32)
+adding (depleted a32)
+
+checking next happening (time 6)
+deleting (robot-location a32)
+adding (robot-location a33)
+
+checking next happening (time 7)
+deleting (mineral a33)
+adding (depleted a33)
+
+checking next happening (time 8)
+deleting (robot-location a33)
+adding (robot-location a23)
+
+checking next happening (time 9)
+deleting (robot-location a23)
+deleting (minecar-location m1 a23)
+deleting (empty a22)
+adding (robot-location a22)
+adding (minecar-location m1 a22)
+adding (empty a23)
+
+checking next happening (time 10)
+deleting (robot-location a22)
+deleting (minecar-location m1 a22)
+deleting (empty a21)
+adding (robot-location a21)
+adding (minecar-location m1 a21)
+adding (empty a22)
+
+checking next happening (time 11)
+deleting (robot-location a21)
+deleting (minecar-location m1 a21)
+deleting (empty a11)
+adding (robot-location a11)
+adding (minecar-location m1 a11)
+adding (empty a21)
+
+checking next happening (time 12)
+deleting (robot-location a11)
+adding (robot-location a21)
+
+checking next happening (time 13)
+deleting (robot-location a21)
+adding (robot-location a31)
+
+checking next happening (time 14)
+deleting (robot-location a31)
+deleting (minecar-location m2 a31)
+deleting (empty a21)
+adding (robot-location a21)
+adding (minecar-location m2 a21)
+adding (empty a31)
+
+checking next happening (time 15)
+deleting (robot-location a21)
+deleting (minecar-location m2 a21)
+deleting (empty a22)
+adding (robot-location a22)
+adding (minecar-location m2 a22)
+adding (empty a21)
+
+checking next happening (time 16)
+deleting (robot-location a22)
+deleting (minecar-location m2 a22)
+deleting (empty a23)
+adding (robot-location a23)
+adding (minecar-location m2 a23)
+adding (empty a22)
+
+checking next happening (time 17)
+deleting (robot-location a23)
+deleting (minecar-location m2 a23)
+deleting (empty a13)
+adding (robot-location a13)
+adding (minecar-location m2 a13)
+adding (empty a23)
+plan executed successfully - checking goal
+plan valid
+final value: 17 
+
+successful plans:
+value: 17
+ plan 17 

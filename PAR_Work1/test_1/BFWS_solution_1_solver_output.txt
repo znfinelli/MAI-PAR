@@ -1,0 +1,29 @@
+ --- OK.
+ Match tree built with 47 nodes.
+
+PDDL problem description loaded: 
+	Domain: MINING-ROBOT
+	Problem: MINING_3X3
+	#Actions: 47
+	#Fluents: 42
+Goals found: 6
+Goals_Edges found: 6
+Starting search with 1-BFWS...
+--[6 / 0]--
+--[6 / 1]--
+--[6 / 2]--
+--[5 / 0]--
+--[5 / 2]--
+--[4 / 0]--
+--[4 / 1]--
+--[4 / 2]--
+--[4 / 5]--
+--[3 / 0]--
+--[3 / 2]--
+--[2 / 0]--
+--[2 / 2]--
+--[2 / 5]--
+--[2 / 6]--
+--[2 / 9]--
+--[2 / 10]--
+--[2 / 13]--
