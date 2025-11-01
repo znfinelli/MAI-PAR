@@ -1,0 +1,5 @@
+(pick-up waiter dish1 k)
+(move waiter k dr1)
+(move waiter dr1 dr3)
+(move waiter dr3 dr4)
+(serve waiter dish1 table1 dr4)

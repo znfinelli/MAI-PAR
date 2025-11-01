@@ -1,0 +1,57 @@
+type-checking move
+...action passes type checking.
+type-checking pick-up
+...action passes type checking.
+type-checking serve
+...action passes type checking.
+checking plan: plan
+plan to validate:
+
+plan size: 5
+1:
+(pick-up waiter dish1 k)
+ 
+2:
+(move waiter k dr1)
+ 
+3:
+(move waiter dr1 dr3)
+ 
+4:
+(move waiter dr3 dr4)
+ 
+5:
+(serve waiter dish1 table1 dr4)
+ 
+
+plan validation details
+-----------------------
+
+checking next happening (time 1)
+deleting (hands-free waiter)
+deleting (dish-at dish1 k)
+adding (holding waiter dish1)
+
+checking next happening (time 2)
+deleting (robot-at waiter k)
+adding (robot-at waiter dr1)
+
+checking next happening (time 3)
+deleting (robot-at waiter dr1)
+adding (robot-at waiter dr3)
+
+checking next happening (time 4)
+deleting (robot-at waiter dr3)
+adding (robot-at waiter dr4)
+
+checking next happening (time 5)
+deleting (holding waiter dish1)
+adding (served table1)
+adding (hands-free waiter)
+plan executed successfully - checking goal
+plan valid
+final value: 5 
+
+successful plans:
+value: 5
+ plan 5 
