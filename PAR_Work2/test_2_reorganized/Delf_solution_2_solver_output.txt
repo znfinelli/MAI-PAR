@@ -1,0 +1,325 @@
+stderr: 
+Using TensorFlow backend.
+
+stdout: 
+Parsing pddl.....
+Warning: Atom adjacent(hall1, hall2) is specified twice in initial state specification
+Warning: Atom adjacent(hall2, hall3) is specified twice in initial state specification
+Parsing pddl..: [0.010s CPU, 0.003s wall-clock]
+Normalizing task.....
+Normalizing task..: [0.000s CPU, 0.000s wall-clock]
+Creating abstract structure graph.....
+Creating abstract structure graph..: [0.000s CPU, 0.001s wall-clock]
+Computing image from given graph...
+Using graph input file /tmp/tmpikg6qr_i/abstract-structure-graph.txt
+Using image output directory /tmp/tmpikg6qr_i
+Writing abstract structure graph grayscale 8bit image.....
+Grayscale color: 255
+Creating matrix for a graph with 149 nodes..
+Matrix size when created: 180000
+Matrix created, filling with values for edges..
+Performing bolding.
+Matrix size when 1s added: 180000
+Number of graph nodes: 150
+Shrink ratio: 3
+Shrinking matrix to size 50x50..
+Shrinked matrix size when created: 20000
+Writing grayscale image of size 128x128 ..
+Writing abstract structure graph grayscale 8bit image..: [0.280s CPU, 0.018s wall-clock]
+Done computing image! [0.300s CPU, 0.020s wall-clock]
+
+==== Computing an abstract structure graph from the lifted task description... ====
+
+
+==== Done computing an abstract structure graph. ====
+
+
+==== Selecting planner from learned model... ====
+
+Using json model file /workspace/delfi/dl_model/models/lifted/model.json
+Using h5 model file /workspace/delfi/dl_model/models/lifted/model.h5
+Loaded model from disk
+Chose 5652d59dafed-h2-simpless-oss-celmcut
+
+==== Done selecting planner from learned model. ====
+
+
+==== Running the selected planner... ====
+
+Running planner, call string: ['/usr/bin/python', '/workspace/delfi/fast-downward.py', '--transform-task', 'preprocess', '--build', 'release64', '--search-memory-limit', '7600M', '--plan-file', 'plan', 'domain', 'problem', '--symmetries', 'sym=structural_symmetries(search_symmetries=oss)', '--search', 'astar(celmcut,symmetries=sym,pruning=stubborn_sets_simple(minimum_pruning_ratio=0.01),num_por_probes=1000)']
+INFO     Running translator.
+INFO     translator input: ['domain', 'problem']
+INFO     translator arguments: []
+INFO     translator time limit: None
+INFO     translator memory limit: None
+INFO     callstring: /usr/bin/python /workspace/delfi/builds/release64/bin/translate/translate.py domain problem
+Parsing...
+Warning: Atom adjacent(hall1, hall2) is specified twice in initial state specification
+Warning: Atom adjacent(hall2, hall3) is specified twice in initial state specification
+Parsing: [0.000s CPU, 0.003s wall-clock]
+Normalizing task... [0.000s CPU, 0.000s wall-clock]
+Instantiating...
+Generating Datalog program... [0.000s CPU, 0.001s wall-clock]
+Normalizing Datalog program...
+Normalizing Datalog program: [0.000s CPU, 0.002s wall-clock]
+Preparing model... [0.000s CPU, 0.002s wall-clock]
+Generated 20 rules.
+Computing model... [0.010s CPU, 0.007s wall-clock]
+439 relevant atoms
+382 auxiliary atoms
+821 final queue length
+1016 total queue pushes
+Completing instantiation... [0.010s CPU, 0.007s wall-clock]
+Instantiating: [0.020s CPU, 0.018s wall-clock]
+Computing fact groups...
+Finding invariants...
+13 initial candidates
+Finding invariants: [0.000s CPU, 0.002s wall-clock]
+Checking invariant weight... [0.000s CPU, 0.000s wall-clock]
+Instantiating groups... [0.000s CPU, 0.001s wall-clock]
+Collecting mutex groups... [0.000s CPU, 0.000s wall-clock]
+Choosing groups...
+10 uncovered facts
+Choosing groups: [0.000s CPU, 0.000s wall-clock]
+Building translation key... [0.000s CPU, 0.000s wall-clock]
+Computing fact groups: [0.000s CPU, 0.004s wall-clock]
+Building STRIPS to SAS dictionary... [0.000s CPU, 0.000s wall-clock]
+Building dictionary for full mutex groups... [0.000s CPU, 0.000s wall-clock]
+Building mutex information...
+Building mutex information: [0.000s CPU, 0.000s wall-clock]
+Translating task...
+Processing axioms...
+Simplifying axioms... [0.000s CPU, 0.000s wall-clock]
+Processing axioms: [0.000s CPU, 0.000s wall-clock]
+Translating task: [0.010s CPU, 0.007s wall-clock]
+10 effect conditions simplified
+0 implied preconditions added
+Detecting unreachable propositions...
+0 operators removed
+0 axioms removed
+4 propositions removed
+Detecting unreachable propositions: [0.000s CPU, 0.004s wall-clock]
+Reordering and filtering variables...
+14 of 14 variables necessary.
+5 of 9 mutex groups necessary.
+200 of 200 operators necessary.
+0 of 0 axiom rules necessary.
+Reordering and filtering variables: [0.000s CPU, 0.001s wall-clock]
+Translator variables: 14
+Translator derived variables: 0
+Translator facts: 74
+Translator goal facts: 7
+Translator mutex groups: 5
+Translator total mutex groups size: 15
+Translator operators: 200
+Translator axioms: 0
+Translator task size: 840
+Translator peak memory: 28344 KB
+Writing output... [0.000s CPU, 0.001s wall-clock]
+Done! [0.030s CPU, 0.039s wall-clock]
+INFO     Run task transformation (preprocess).
+INFO     Absolute path: /workspace/delfi/builds/release64/bin/preprocess
+INFO     callstring: /workspace/delfi/builds/release64/bin/preprocess < output.sas
+Building causal graph...
+The causal graph is not acyclic.
+14 variables of 14 necessary
+5 of 5 mutex groups necessary.
+200 of 200 operators necessary.
+0 of 0 axiom rules necessary.
+Initializing mutex computation...
+Mutex computation initialized with 74 fluents.
+iteration for mutex detection and operator pruning
+Initialize m_index fw
+Initialized mvalues forward: reached=196, notReached=4330, spurious=950
+Initialize m_ops fw
+Computing mutexes...
+Mutex computation finished with reached=4526, notReached=0, spurious=950
+0 operators are spurious because were not triggered
+H^2 mutexes added fw: 0, unreachable: 0
+0 of 200 operators detected as spurious
+iteration for mutex detection and operator pruning
+Initialize m_index bw
+Init values regression
+Initialized mvalues backward: reached=741, notReached=3785, spurious=950
+Initialize m_ops bw
+Computing mutexes...
+Mutex computation finished with reached=4526, notReached=0, spurious=950
+0 operators are spurious because were not triggered
+H^2 mutexes added bw: 0, unreachable: 0
+0 of 200 operators detected as spurious
+Total mutex and disambiguation time: 0.002387 iterations: 2
+5 of 5 mutex groups necessary.
+200 of 200 operators necessary.
+0 of 0 axiom rules necessary.
+Change id of operators: 200
+Change id of mutexes
+Change id of goals
+Change id of initial state
+Remove unreachable facts from variables: 14
+5 of 5 mutex groups necessary.
+200 of 200 operators necessary.
+0 of 0 axiom rules necessary.
+Updating causal graph and pruning unnecessary facts
+14 variables of 14 of 14 necessary
+The causal graph is not acyclic.
+14 variables of 14 necessary
+5 of 5 mutex groups necessary.
+200 of 200 operators necessary.
+0 of 0 axiom rules necessary.
+Building domain transition graphs...
+solveable in poly time 0
+Building successor generator...
+Preprocessor variables: 14
+Preprocessor facts: 74
+Preprocessor derived variables: 0
+Preprocessor operators: 200
+Preprocessor mutex groups: 5
+Preprocessor task size: 840
+Writing output...
+done
+INFO     Running search (release64).
+INFO     search input: output.sas
+INFO     search arguments: ['--symmetries', 'sym=structural_symmetries(search_symmetries=oss)', '--search', 'astar(celmcut,symmetries=sym,pruning=stubborn_sets_simple(minimum_pruning_ratio=0.01),num_por_probes=1000)']
+INFO     search time limit: None
+INFO     search memory limit: 7600 MB
+INFO     search executable: /workspace/delfi/builds/release64/bin/downward
+INFO     callstring: /workspace/delfi/builds/release64/bin/downward --symmetries 'sym=structural_symmetries(search_symmetries=oss)' --search 'astar(celmcut,symmetries=sym,pruning=stubborn_sets_simple(minimum_pruning_ratio=0.01),num_por_probes=1000)' --internal-plan-file plan < output.sas
+reading input... [t=6.1706e-05s]
+done reading input! [t=0.000765696s]
+packing state variables...done! [t=0.000780774s]
+Variables: 14
+FactPairs: 74
+Bytes per state: 4
+Building successor generator...done! [t=0.000909295s]
+peak memory difference for root successor generator creation: 0 KB
+time for root successor generation creation: 4.3782e-05s
+done initializing global data [t=0.000962655s]
+Initializing landmark cut heuristic...
+Initializing symmetries (eager search)
+Initializing symmetries
+Using Bliss to find group generators
+Done initializing symmetries: 0.000284373s
+Number of generators: 2
+Number of identity generators (on states, not on operators): 0
+Order of generators: [2, 2]
+Conducting best first search with reopening closed nodes, (real) bound = 2147483647
+New best heuristic value for celmcut: 13
+[g=0, 1 evaluated, 0 expanded, t=0.00165188s, 5660 KB]
+f = 13 [1 evaluated, 0 expanded, t=0.00168332s, 5660 KB]
+Initial heuristic value for celmcut: 13
+pruning method: stubborn sets simple
+f = 14 [5 evaluated, 1 expanded, t=0.00235192s, 5712 KB]
+New best heuristic value for celmcut: 11
+[g=2, 12 evaluated, 3 expanded, t=0.00271823s, 5712 KB]
+f = 15 [19 evaluated, 5 expanded, t=0.00306402s, 5712 KB]
+f = 16 [51 evaluated, 17 expanded, t=0.00456318s, 5712 KB]
+New best heuristic value for celmcut: 10
+[g=3, 80 evaluated, 37 expanded, 1 reopened, t=0.00596777s, 5712 KB]
+f = 17 [100 evaluated, 45 expanded, 1 reopened, t=0.00688891s, 5712 KB]
+f = 18 [181 evaluated, 101 expanded, 6 reopened, t=0.0105623s, 5712 KB]
+f = 19 [284 evaluated, 192 expanded, 15 reopened, t=0.0151919s, 5712 KB]
+New best heuristic value for celmcut: 9
+[g=10, 309 evaluated, 208 expanded, 15 reopened, t=0.0162927s, 5712 KB]
+New best heuristic value for celmcut: 8
+[g=10, 315 evaluated, 210 expanded, 15 reopened, t=0.0165362s, 5712 KB]
+f = 20 [526 evaluated, 332 expanded, 21 reopened, t=0.0254812s, 5712 KB]
+New best heuristic value for celmcut: 7
+[g=12, 577 evaluated, 369 expanded, 21 reopened, t=0.0276003s, 5712 KB]
+f = 21 [848 evaluated, 540 expanded, 27 reopened, t=0.0396895s, 5712 KB]
+f = 22 [1507 evaluated, 912 expanded, 38 reopened, t=0.0676271s, 5712 KB]
+f = 23 [2856 evaluated, 1678 expanded, 79 reopened, t=0.124705s, 5868 KB]
+f = 24 [5095 evaluated, 2993 expanded, 137 reopened, t=0.221068s, 6028 KB]
+f = 25 [8869 evaluated, 5303 expanded, 224 reopened, t=0.378066s, 6332 KB]
+f = 26 [14750 evaluated, 9177 expanded, 355 reopened, t=0.618941s, 6600 KB]
+New best heuristic value for celmcut: 6
+[g=20, 14781 evaluated, 9188 expanded, 355 reopened, t=0.619972s, 6600 KB]
+f = 27 [23879 evaluated, 15506 expanded, 624 reopened, t=0.987524s, 7244 KB]
+f = 28 [35676 evaluated, 24174 expanded, 928 reopened, t=1.46032s, 8152 KB]
+New best heuristic value for celmcut: 5
+[g=22, 35794 evaluated, 24219 expanded, 928 reopened, t=1.46369s, 8152 KB]
+f = 29 [51915 evaluated, 36348 expanded, 1350 reopened, t=2.09688s, 9084 KB]
+f = 30 [72028 evaluated, 52223 expanded, 1925 reopened, t=2.87708s, 10776 KB]
+f = 31 [96382 evaluated, 72515 expanded, 2724 reopened, t=3.81935s, 12108 KB]
+f = 32 [125685 evaluated, 97087 expanded, 3546 reopened, t=4.97124s, 13712 KB]
+f = 33 [159723 evaluated, 126119 expanded, 4491 reopened, t=6.30531s, 16592 KB]
+f = 34 [198245 evaluated, 159791 expanded, 5530 reopened, t=7.82356s, 18716 KB]
+f = 35 [240244 evaluated, 198408 expanded, 6703 reopened, t=9.40174s, 21128 KB]
+f = 36 [284842 evaluated, 240467 expanded, 7767 reopened, t=11.0977s, 25996 KB]
+New best heuristic value for celmcut: 4
+[g=32, 284867 evaluated, 240483 expanded, 7767 reopened, t=11.0984s, 25996 KB]
+f = 37 [330186 evaluated, 285500 expanded, 8978 reopened, t=12.7611s, 28120 KB]
+f = 38 [376141 evaluated, 331856 expanded, 9944 reopened, t=14.4317s, 30636 KB]
+New best heuristic value for celmcut: 3
+[g=35, 376143 evaluated, 331857 expanded, 9944 reopened, t=14.4319s, 30636 KB]
+f = 39 [419274 evaluated, 378303 expanded, 10941 reopened, t=16.0105s, 33032 KB]
+f = 40 [458660 evaluated, 422962 expanded, 11822 reopened, t=17.445s, 35168 KB]
+New best heuristic value for celmcut: 2
+[g=38, 458663 evaluated, 422963 expanded, 11822 reopened, t=17.4452s, 35168 KB]
+New best heuristic value for celmcut: 1
+[g=39, 458667 evaluated, 422964 expanded, 11822 reopened, t=17.4453s, 35168 KB]
+New best heuristic value for celmcut: 0
+[g=40, 458670 evaluated, 422965 expanded, 11822 reopened, t=17.4454s, 35168 KB]
+Solution found!
+Actual search time: 17.4435s [t=17.4456s]
+pick-up waiter2 dish3 k2 (1)
+move waiter2 k2 hall2 (1)
+move waiter2 hall2 dr5 (1)
+move waiter2 dr5 dr11 (1)
+serve waiter2 dish3 table3 dr11 (1)
+move waiter2 dr11 dr5 (1)
+move waiter2 dr5 hall2 (1)
+move waiter2 hall2 k2 (1)
+pick-up waiter2 dish4 k2 (1)
+move waiter2 k2 hall2 (1)
+move waiter2 hall2 dr6 (1)
+move waiter2 dr6 dr7 (1)
+move waiter2 dr7 dr13 (1)
+serve waiter2 dish4 table4 dr13 (1)
+move waiter2 dr13 dr7 (1)
+move waiter2 dr7 hall3 (1)
+move waiter2 hall3 k3 (1)
+pick-up waiter1 dish1 k1 (1)
+pick-up waiter2 dish5 k3 (1)
+move waiter2 k3 hall3 (1)
+move waiter2 hall3 dr7 (1)
+serve waiter2 dish5 table2 dr7 (1)
+move waiter2 dr7 dr6 (1)
+move waiter2 dr6 hall2 (1)
+move waiter2 hall2 k2 (1)
+move waiter1 k1 hall1 (1)
+move waiter1 hall1 dr3 (1)
+move waiter1 dr3 dr12 (1)
+move waiter1 dr12 dr15 (1)
+serve waiter1 dish1 table5 dr15 (1)
+move waiter1 dr15 dr12 (1)
+move waiter1 dr12 dr3 (1)
+move waiter1 dr3 hall1 (1)
+move waiter1 hall1 k1 (1)
+pick-up waiter1 dish2 k1 (1)
+move waiter1 k1 hall1 (1)
+move waiter1 hall1 dr3 (1)
+serve waiter1 dish2 table1 dr3 (1)
+move waiter1 dr3 hall1 (1)
+move waiter1 hall1 k1 (1)
+Plan length: 40 step(s).
+Plan cost: 40
+Expanded 422966 state(s).
+Reopened 11822 state(s).
+Evaluated 458670 state(s).
+Evaluations: 458670
+Generated 1585172 state(s).
+Dead ends: 34 state(s).
+Expanded until last jump: 422962 state(s).
+Reopened until last jump: 11822 state(s).
+Evaluated until last jump: 458660 state(s).
+Generated until last jump: 1585158 state(s).
+Number of registered states: 458727
+total successors before partial-order reduction: 2960070
+total successors after partial-order reduction: 1585172
+Search time: 17.4441s
+Total time: 17.4456s
+Solution found.
+Peak memory: 35168 KB
+Overall time: [17.590s CPU, 17.602s wall-clock]
+
+==== Done running the selected planner. ====
