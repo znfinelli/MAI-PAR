@@ -1,0 +1,310 @@
+type-checking move
+...action passes type checking.
+type-checking pick-up
+...action passes type checking.
+type-checking serve
+...action passes type checking.
+checking plan: plan
+plan to validate:
+
+plan size: 40
+1:
+(pick-up waiter2 dish4 k2)
+ 
+2:
+(pick-up waiter1 dish2 k1)
+ 
+3:
+(move waiter1 k1 hall1)
+ 
+4:
+(move waiter1 hall1 dr3)
+ 
+5:
+(serve waiter1 dish2 table1 dr3)
+ 
+6:
+(move waiter1 dr3 hall1)
+ 
+7:
+(move waiter1 hall1 k1)
+ 
+8:
+(move waiter2 k2 hall2)
+ 
+9:
+(move waiter2 hall2 dr5)
+ 
+10:
+(move waiter2 dr5 dr11)
+ 
+11:
+(serve waiter2 dish4 table3 dr11)
+ 
+12:
+(move waiter2 dr11 dr5)
+ 
+13:
+(move waiter2 dr5 hall2)
+ 
+14:
+(move waiter2 hall2 k2)
+ 
+15:
+(pick-up waiter2 dish3 k2)
+ 
+16:
+(pick-up waiter1 dish1 k1)
+ 
+17:
+(move waiter1 k1 hall1)
+ 
+18:
+(move waiter1 hall1 dr1)
+ 
+19:
+(move waiter1 dr1 dr10)
+ 
+20:
+(move waiter1 dr10 dr13)
+ 
+21:
+(serve waiter1 dish1 table4 dr13)
+ 
+22:
+(move waiter1 dr13 dr10)
+ 
+23:
+(move waiter1 dr10 dr1)
+ 
+24:
+(move waiter1 dr1 hall1)
+ 
+25:
+(move waiter1 hall1 k1)
+ 
+26:
+(move waiter2 k2 hall2)
+ 
+27:
+(move waiter2 hall2 hall3)
+ 
+28:
+(move waiter2 hall3 dr7)
+ 
+29:
+(serve waiter2 dish3 table2 dr7)
+ 
+30:
+(move waiter2 dr7 hall3)
+ 
+31:
+(move waiter2 hall3 k3)
+ 
+32:
+(pick-up waiter2 dish5 k3)
+ 
+33:
+(move waiter2 k3 hall3)
+ 
+34:
+(move waiter2 hall3 dr9)
+ 
+35:
+(move waiter2 dr9 dr15)
+ 
+36:
+(serve waiter2 dish5 table5 dr15)
+ 
+37:
+(move waiter2 dr15 dr9)
+ 
+38:
+(move waiter2 dr9 hall3)
+ 
+39:
+(move waiter2 hall3 hall2)
+ 
+40:
+(move waiter2 hall2 k2)
+ 
+
+plan validation details
+-----------------------
+
+checking next happening (time 1)
+deleting (hands-free waiter2)
+deleting (dish-at dish4 k2)
+adding (holding waiter2 dish4)
+
+checking next happening (time 2)
+deleting (hands-free waiter1)
+deleting (dish-at dish2 k1)
+adding (holding waiter1 dish2)
+
+checking next happening (time 3)
+deleting (robot-at waiter1 k1)
+adding (robot-at waiter1 hall1)
+
+checking next happening (time 4)
+deleting (robot-at waiter1 hall1)
+adding (robot-at waiter1 dr3)
+
+checking next happening (time 5)
+deleting (holding waiter1 dish2)
+adding (served table1)
+adding (hands-free waiter1)
+
+checking next happening (time 6)
+deleting (robot-at waiter1 dr3)
+adding (robot-at waiter1 hall1)
+
+checking next happening (time 7)
+deleting (robot-at waiter1 hall1)
+adding (robot-at waiter1 k1)
+
+checking next happening (time 8)
+deleting (robot-at waiter2 k2)
+adding (robot-at waiter2 hall2)
+
+checking next happening (time 9)
+deleting (robot-at waiter2 hall2)
+adding (robot-at waiter2 dr5)
+
+checking next happening (time 10)
+deleting (robot-at waiter2 dr5)
+adding (robot-at waiter2 dr11)
+
+checking next happening (time 11)
+deleting (holding waiter2 dish4)
+adding (served table3)
+adding (hands-free waiter2)
+
+checking next happening (time 12)
+deleting (robot-at waiter2 dr11)
+adding (robot-at waiter2 dr5)
+
+checking next happening (time 13)
+deleting (robot-at waiter2 dr5)
+adding (robot-at waiter2 hall2)
+
+checking next happening (time 14)
+deleting (robot-at waiter2 hall2)
+adding (robot-at waiter2 k2)
+
+checking next happening (time 15)
+deleting (hands-free waiter2)
+deleting (dish-at dish3 k2)
+adding (holding waiter2 dish3)
+
+checking next happening (time 16)
+deleting (hands-free waiter1)
+deleting (dish-at dish1 k1)
+adding (holding waiter1 dish1)
+
+checking next happening (time 17)
+deleting (robot-at waiter1 k1)
+adding (robot-at waiter1 hall1)
+
+checking next happening (time 18)
+deleting (robot-at waiter1 hall1)
+adding (robot-at waiter1 dr1)
+
+checking next happening (time 19)
+deleting (robot-at waiter1 dr1)
+adding (robot-at waiter1 dr10)
+
+checking next happening (time 20)
+deleting (robot-at waiter1 dr10)
+adding (robot-at waiter1 dr13)
+
+checking next happening (time 21)
+deleting (holding waiter1 dish1)
+adding (served table4)
+adding (hands-free waiter1)
+
+checking next happening (time 22)
+deleting (robot-at waiter1 dr13)
+adding (robot-at waiter1 dr10)
+
+checking next happening (time 23)
+deleting (robot-at waiter1 dr10)
+adding (robot-at waiter1 dr1)
+
+checking next happening (time 24)
+deleting (robot-at waiter1 dr1)
+adding (robot-at waiter1 hall1)
+
+checking next happening (time 25)
+deleting (robot-at waiter1 hall1)
+adding (robot-at waiter1 k1)
+
+checking next happening (time 26)
+deleting (robot-at waiter2 k2)
+adding (robot-at waiter2 hall2)
+
+checking next happening (time 27)
+deleting (robot-at waiter2 hall2)
+adding (robot-at waiter2 hall3)
+
+checking next happening (time 28)
+deleting (robot-at waiter2 hall3)
+adding (robot-at waiter2 dr7)
+
+checking next happening (time 29)
+deleting (holding waiter2 dish3)
+adding (served table2)
+adding (hands-free waiter2)
+
+checking next happening (time 30)
+deleting (robot-at waiter2 dr7)
+adding (robot-at waiter2 hall3)
+
+checking next happening (time 31)
+deleting (robot-at waiter2 hall3)
+adding (robot-at waiter2 k3)
+
+checking next happening (time 32)
+deleting (hands-free waiter2)
+deleting (dish-at dish5 k3)
+adding (holding waiter2 dish5)
+
+checking next happening (time 33)
+deleting (robot-at waiter2 k3)
+adding (robot-at waiter2 hall3)
+
+checking next happening (time 34)
+deleting (robot-at waiter2 hall3)
+adding (robot-at waiter2 dr9)
+
+checking next happening (time 35)
+deleting (robot-at waiter2 dr9)
+adding (robot-at waiter2 dr15)
+
+checking next happening (time 36)
+deleting (holding waiter2 dish5)
+adding (served table5)
+adding (hands-free waiter2)
+
+checking next happening (time 37)
+deleting (robot-at waiter2 dr15)
+adding (robot-at waiter2 dr9)
+
+checking next happening (time 38)
+deleting (robot-at waiter2 dr9)
+adding (robot-at waiter2 hall3)
+
+checking next happening (time 39)
+deleting (robot-at waiter2 hall3)
+adding (robot-at waiter2 hall2)
+
+checking next happening (time 40)
+deleting (robot-at waiter2 hall2)
+adding (robot-at waiter2 k2)
+plan executed successfully - checking goal
+plan valid
+final value: 40 
+
+successful plans:
+value: 40
+ plan 40 
