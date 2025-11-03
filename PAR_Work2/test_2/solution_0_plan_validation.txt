@@ -1,0 +1,115 @@
+type-checking move
+...action passes type checking.
+type-checking pick-up
+...action passes type checking.
+type-checking serve
+...action passes type checking.
+checking plan: plan
+plan to validate:
+
+plan size: 13
+1:
+(pick-up waiter dish1 k)
+ 
+2:
+(move waiter k dr1)
+ 
+3:
+(move waiter dr1 dr3)
+ 
+4:
+(move waiter dr3 dr4)
+ 
+5:
+(serve waiter dish1 table1 dr4)
+ 
+6:
+(move waiter dr4 dr3)
+ 
+7:
+(move waiter dr3 dr1)
+ 
+8:
+(move waiter dr1 k)
+ 
+9:
+(pick-up waiter dish2 k)
+ 
+10:
+(move waiter k dr6)
+ 
+11:
+(move waiter dr6 dr10)
+ 
+12:
+(move waiter dr10 dr9)
+ 
+13:
+(serve waiter dish2 table2 dr9)
+ 
+
+plan validation details
+-----------------------
+
+checking next happening (time 1)
+deleting (hands-free waiter)
+deleting (dish-at dish1 k)
+adding (holding waiter dish1)
+
+checking next happening (time 2)
+deleting (robot-at waiter k)
+adding (robot-at waiter dr1)
+
+checking next happening (time 3)
+deleting (robot-at waiter dr1)
+adding (robot-at waiter dr3)
+
+checking next happening (time 4)
+deleting (robot-at waiter dr3)
+adding (robot-at waiter dr4)
+
+checking next happening (time 5)
+deleting (holding waiter dish1)
+adding (served table1)
+adding (hands-free waiter)
+
+checking next happening (time 6)
+deleting (robot-at waiter dr4)
+adding (robot-at waiter dr3)
+
+checking next happening (time 7)
+deleting (robot-at waiter dr3)
+adding (robot-at waiter dr1)
+
+checking next happening (time 8)
+deleting (robot-at waiter dr1)
+adding (robot-at waiter k)
+
+checking next happening (time 9)
+deleting (hands-free waiter)
+deleting (dish-at dish2 k)
+adding (holding waiter dish2)
+
+checking next happening (time 10)
+deleting (robot-at waiter k)
+adding (robot-at waiter dr6)
+
+checking next happening (time 11)
+deleting (robot-at waiter dr6)
+adding (robot-at waiter dr10)
+
+checking next happening (time 12)
+deleting (robot-at waiter dr10)
+adding (robot-at waiter dr9)
+
+checking next happening (time 13)
+deleting (holding waiter dish2)
+adding (served table2)
+adding (hands-free waiter)
+plan executed successfully - checking goal
+plan valid
+final value: 13 
+
+successful plans:
+value: 13
+ plan 13 
